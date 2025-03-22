@@ -216,7 +216,7 @@ h1 {
     bottom: 0px;
 }
 
-section {
+.appear {
     margin: 0;
     padding: 0;
     display: block;
@@ -243,25 +243,26 @@ section {
 }
 
 .story-content {
-    padding: 50px; /* Add padding for spacing */
+    padding: 50px; 
 }
 
 .story-container {
-    display: flex; /* Use flexbox for side-by-side layout */
-    justify-content: space-around; /* Distribute space evenly */
-    align-items: flex-start; /* Align items to the start */
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; 
 }
 
 .text-column {
-    flex: 1; /* Allow text to take up available space */
-    padding-right: 20px; /* Add spacing between text and image */
+    flex: 1; 
+    padding-right: 20px; 
 }
 
 .image-column {
-    flex: 1; /* Allow image to take up available space */
+    flex: 1; 
 }
 
 .image-column img {
-    max-width: 100%; /* Ensure image doesn't exceed container width */
+    max-width: 100%; 
     height: auto;
+    border-radius: 10px;
 }
