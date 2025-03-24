@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url('images/background.png');
 }
 
 .first-section{
@@ -112,7 +118,13 @@ button {
     border-radius: 20px;
     outline: none;
     cursor: pointer;
+    transition: 0.3s;
 }
+
+button:hover {  
+    background: #fff; 
+    color: #000; 
+} 
 
 .content {
     color: #fbfcfd;
@@ -216,14 +228,78 @@ h1 {
     bottom: 0px;
 }
 
-.appear {
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.cont{
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont .image{
+    position: relative;
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.cont .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cont .text-box, .cont .info{
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+
+.info{
+    width: 700px;
+    margin-left: 50px;
+}
+
+/* .appear {
     margin: 0;
     padding: 0;
     display: block;
     min-height: auto;
 }
 
-.appear {
+.appear .appear-text {
     opacity: 0;
     filter: blur(10px);
     transform: translateX(-100%);
@@ -264,5 +340,5 @@ h1 {
 .image-column img {
     max-width: 100%; 
     height: auto;
-    border-radius: 10px;
-}
+    border-radius: 30px;
+} */
