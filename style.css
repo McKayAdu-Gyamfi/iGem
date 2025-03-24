@@ -7,6 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('images/background.png');
 }
@@ -22,15 +26,6 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
-
-/* .blablabla{
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-} */
 
 .logo{
     width: 160px;
@@ -250,6 +245,11 @@ section{
     margin-bottom: 50px;
 }
 
+.section-title{
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
 .cont{
     position: relative;
     width: 1150px;
@@ -281,7 +281,7 @@ section{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
     padding: 40px;
-    max-width: 400px;
+    max-width: 500px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     transform: translate(-80px, 50px);
@@ -292,53 +292,22 @@ section{
     margin-left: 50px;
 }
 
-/* .appear {
-    margin: 0;
-    padding: 0;
-    display: block;
-    min-height: auto;
+.last-info{
+    font-size: 20px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 70px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
 }
 
-.appear .appear-text {
-    opacity: 0;
-    filter: blur(10px);
-    transform: translateX(-100%);
-    transition: all 1s;
+.project-focus{
+    font-size: 20px;
+    margin-bottom: 50px;
+    background: rgba(255, 200, 0, 0.365);
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
 }
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .appear {
-        transition: none;
-    }
-}
-
-.story-content {
-    padding: 50px; 
-}
-
-.story-container {
-    display: flex; 
-    justify-content: space-around; 
-    align-items: flex-start; 
-}
-
-.text-column {
-    flex: 1; 
-    padding-right: 20px; 
-}
-
-.image-column {
-    flex: 1; 
-}
-
-.image-column img {
-    max-width: 100%; 
-    height: auto;
-    border-radius: 30px;
-} */
